@@ -5,12 +5,12 @@ public class Array1 implements Array{
     int elementArray = 0;
 
     @Override
-    public int getElemetArray(int i) {
+    public int getElementArray(int i) {
         return array[i];
     }
 
     @Override
-    public boolean addElemetArray(int val) {
+    public boolean addElementArray(int val) {
         if (elementArray != array.length) {
             array[elementArray] = val;
             elementArray++;

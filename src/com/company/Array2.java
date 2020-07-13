@@ -5,7 +5,7 @@ public class Array2 implements Array{
     int elementArray = 0;
 
     @Override                       //нужно добавлять как показатель что это описание метода интерфейса
-    public int getElemetArray (int i) {
+    public int getElementArray (int i) {
         if (i < 0 && i > array.length) {
             System.out.println("Error 404");
             return 0;
