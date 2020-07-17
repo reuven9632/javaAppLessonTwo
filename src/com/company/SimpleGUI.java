@@ -69,7 +69,8 @@ public class SimpleGUI extends JFrame{ //наследуем класс JFrame д
             message += "SelectBox is" + (check.isSelected() ? "checked" : "unchecked");
             JOptionPane.showMessageDialog(null, message, "OUTPUT", JOptionPane.PLAIN_MESSAGE);
             //JOptionPane создает новое окно в котором будет выведенно сообщение с помощью .showMessageDialog, а внутри
-            // круглых скобок указываем параметры, первый это свои данные, потом что выводим, название, и вид того что будет выведенно(пролстое сообщение)
+            // круглых скобок указываем параметры, первый это свои данные, потом что выводим, название, и вид того что
+            // будет выведенно(пролстое сообщение)
         }
     }
 }
