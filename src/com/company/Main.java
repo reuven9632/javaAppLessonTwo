@@ -1,6 +1,7 @@
 package com.company;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 
 public class Main {
 
@@ -20,10 +21,13 @@ public class Main {
         someDynamicArray.add(53);
         someDynamicArray.add(564);
         someDynamicArray.add(53);
-        someDynamicArray.add(53);
-        someDynamicArray.add(53);
-        someDynamicArray.add(53);
-        someDynamicArray.add(53);
+        someDynamicArray.add(53446);
+        someDynamicArray.add(5223);
+        someDynamicArray.add(5);
+        someDynamicArray.add(3);
+
+        /*someDynamicArray.remove(2);//удатить конкретный эллемент массива,т.к. массив начинаеться с нуля то удалиться третий*/
+        /*someDynamicArray.clear();//для того чтобы удалить все элементы массива*/
 
 
         for (Integer x : someDynamicArray) {//создал переменную типа Integer x (как и мой массив) ,
@@ -32,5 +36,29 @@ public class Main {
             System.out.println(x);
         }
 
+
+
+        //LinkedList ничем по большому счету не отличаеться от ArrayList кроме:
+        // LinkedList быстрее записывает элементы в массив, а ArrayList быстрее их находит в массиве,
+        // LinkedList можно выбирать случайные эллементы (rendom), а ArrayList такого нет
+        LinkedList<String> someLinkedArray = new LinkedList<>();//в LinkedList не нужно писать в круглых скобках начальный размер массива
+
+        someLinkedArray.add("Miki");
+        someLinkedArray.add("Derekh");
+        someLinkedArray.add("David");
+        someLinkedArray.add("Rozy");
+
+
+        someLinkedArray.add(2, "Fill");//для того чтобы добавить новый элемент масива в конкретную ячейку
+
+        /*someLinkedArray.remove(2);//удатить конкретный эллемент массива,т.к. массив начинаеться с нуля то удалиться третий*/
+        /*someLinkedArray.clear();//для того чтобы удалить все элементы массива*/
+
+
+        for (Integer x : someLinkedArray) {//создал переменную типа Integer x (как и мой массив) ,
+            // : someLinkedArray   -  и она (переменная х) будет получать данные с массива
+
+            System.out.println(x);
+        }
     }
 }
