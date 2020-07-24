@@ -10,8 +10,40 @@ public class Main {
 
 
 
-        int someArray[] = new int[4];//создание обычного массива с четыря ячейками памяти
 
+        /*//интерфейс
+        Array arr = new Array1();
+        arr.addElementArray(55);
+        arr.addElementArray(54);
+        arr.addElementArray(53);
+        arr.addElementArray(52);
+        System.out.println("Element of array nomber 2 is " + arr.getElementArray(2));*/
+
+        ExceptionsTryCatch testExceptions = new ExceptionsTryCatch();
+        testExceptions.testTryCach();
+
+
+        /*int array[] = new int[]{23, 55, 43};
+        int n = 3;
+
+        try {
+            System.out.println("array #" + n + array[n]);
+        } catch (ArithmeticException e) {
+            System.out.println("Error" + e);
+        }*/
+
+
+
+
+
+        int[] someArray = new int[4];//создание обычного массива с четыря ячейками памяти
+
+
+
+
+
+
+        //ArrayList
         ArrayList<Integer> someDynamicArray = new ArrayList<>();
         //создаю динамический массив ArrayList у которого в таких <> скобках передаеться параметр  переменной которая будетв нем храниться
         // в данном случае это int но нужно писать полное название Integer, так же как и String и т.п., затем название переменной, выделить
@@ -38,6 +70,11 @@ public class Main {
 
 
 
+
+
+
+
+        //LinkedList
         //LinkedList ничем по большому счету не отличаеться от ArrayList кроме:
         // LinkedList быстрее записывает элементы в массив, а ArrayList быстрее их находит в массиве,
         // LinkedList можно выбирать случайные эллементы (rendom), а ArrayList такого нет
@@ -49,16 +86,28 @@ public class Main {
         someLinkedArray.add("Rozy");
 
 
-        someLinkedArray.add(2, "Fill");//для того чтобы добавить новый элемент масива в конкретную ячейку
+        someLinkedArray.add(2, "Fill");
+        //для того чтобы добавить новый элемент масива в конкретную ячейку,
+        // те эллементы которые будут на его мести и далее сдвинуться к концу массива
 
         /*someLinkedArray.remove(2);//удатить конкретный эллемент массива,т.к. массив начинаеться с нуля то удалиться третий*/
         /*someLinkedArray.clear();//для того чтобы удалить все элементы массива*/
 
 
-        for (Integer x : someLinkedArray) {//создал переменную типа Integer x (как и мой массив) ,
-            // : someLinkedArray   -  и она (переменная х) будет получать данные с массива
-
+        //создал переменную типа Integer x (как и мой массив) , : someLinkedArray   -  и она (переменная х) будет получать данные с массива
+        for (String x : someLinkedArray) {
             System.out.println(x);
         }
+
+
+
+
+
+
+
+
+        //SimpleGUI
+        SimpleGUI testGUI = new SimpleGUI();
+        testGUI.setVisible(true);
     }
 }
