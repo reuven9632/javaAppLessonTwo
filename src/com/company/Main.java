@@ -12,7 +12,7 @@ public class Main {
 
 
         /*//интерфейс
-        Array arr = new Array1();
+        Array arr = new Array1(); //указываю при выделении памяти new Array1 класс который реализует мой интерфейс!!!
         arr.addElementArray(55);
         arr.addElementArray(54);
         arr.addElementArray(53);
